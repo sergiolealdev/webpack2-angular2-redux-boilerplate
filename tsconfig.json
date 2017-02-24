@@ -3,6 +3,7 @@
     "sourceMap": false,
     "noImplicitAny": true,
     "module": "commonjs",
+    "experimentalDecorators": true,
     "target": "es6"
   },
   "exclude": [

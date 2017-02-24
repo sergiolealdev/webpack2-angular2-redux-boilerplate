@@ -2,10 +2,16 @@ var path = require('path');
 var webpack = require("webpack");
 
 module.exports = {
-    entry: './app/index.js',
+    entry: {
+        app:'./app/index.ts',
+       // vendor: './app/vendor.ts'
+    },
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    watchOptions: {
+        poll: true
     },
     module: {
         rules: [
