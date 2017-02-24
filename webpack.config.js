@@ -3,8 +3,7 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: {
-        app:'./app/index.ts',
-       // vendor: './app/vendor.ts'
+        app:'./app/index.ts'
     },
     output: {
         filename: 'bundle.js',
