@@ -4,9 +4,16 @@
   "description": "A simple Angular 2 boilerplate with Webpack 2, Redux and Typescript",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --inline --progress --port 8080"
   },
-  "keywords": [],
+  "keywords": [
+    "boilerplate",
+    "angular2",
+    "webpack2",
+    "redux",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -18,9 +25,22 @@
     "source-map-loader": "^0.1.6",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "angular-in-memory-web-api": "~0.2.4",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.7.4",
     "lodash": "^4.17.4"
   }
 }
