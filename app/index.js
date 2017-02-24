@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import 'babel-polyfill';
 
-
 function component () {
     var element = document.createElement('div');
 

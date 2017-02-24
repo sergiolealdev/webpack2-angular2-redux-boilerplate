@@ -1,21 +1,23 @@
 {
-  "name": "webpack-demo",
-  "version": "1.0.0",
-  "description": "",
+  "name": "webpack2-angular2-redux-boilerplate",
+  "version": "0.0.1",
+  "description": "A simple Angular 2 boilerplate with Webpack 2, Redux and Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "scripts": {
-    "build": "webpack"
-  },
   "devDependencies": {
+    "awesome-typescript-loader": "^3.0.7",
     "babel-cli": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.1.8",
+    "css-loader": "^0.26.1",
+    "source-map-loader": "^0.1.6",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1",
     "webpack": "^2.2.1"
   },
   "dependencies": {
