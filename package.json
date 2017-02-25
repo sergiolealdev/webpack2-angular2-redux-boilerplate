@@ -1,6 +1,6 @@
 {
   "name": "webpack2-angular2-redux-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple Angular 2 boilerplate with Webpack 2, Redux and Typescript",
   "main": "index.js",
   "scripts": {
