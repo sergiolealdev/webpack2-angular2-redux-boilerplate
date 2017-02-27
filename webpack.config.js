@@ -9,13 +9,25 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    resolve: { extensions: ['.webpack.js', '.web.js', '.ts', '.js'] },
     watchOptions: {
         poll: true
     },
     module: {
         rules: [
-            {test: /\.css$/, use: 'css-loader'},
-            {test: /\.ts$/, use: 'ts-loader'}
+            {
+                test: /\.css$/,
+                loaders: ['to-string-loader', 'css-loader']
+            },
+            {
+                test: /\.ts$/,
+                use: 'awesome-typescript-loader'
+            },
+            {
+                test: /\.html$/,
+                use: [ 'raw-loader' ],
+                exclude: /node_modules/
+            }
         ]
     }
 };

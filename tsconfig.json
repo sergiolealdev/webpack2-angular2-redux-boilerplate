@@ -6,6 +6,11 @@
     "experimentalDecorators": true,
     "target": "es6"
   },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "useCache": false,
+    "emitRequireType": false
+  },
   "exclude": [
     "node_modules",
     "dist"
