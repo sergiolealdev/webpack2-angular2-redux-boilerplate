@@ -16,6 +16,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(jpe?g|png|gif|svg)$/, 
+                loader: "file-loader",
+                options: {
+                        name: '[path][name].[ext]'
+                    }
+            },
+            {
                 test: /\.css$/,
                 loaders: ['to-string-loader', 'css-loader']
             },
