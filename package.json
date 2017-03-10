@@ -4,7 +4,7 @@
   "description": "A simple Angular 2 boilerplate with Webpack 2, Redux and Typescript",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "cross-env NODE_ENV=production webpack",
     "webpack-dev": "webpack-dev-server --inline --progress --port 8080",
     "start": "npm run build && webpack-dev-server -d --inline --progress --no-info"
   },
@@ -23,6 +23,7 @@
     "babel-cli": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.1.8",
+    "cross-env": "^3.2.3",
     "css-loader": "^0.26.1",
     "source-map-loader": "^0.1.6",
     "typescript": "^2.2.1",
