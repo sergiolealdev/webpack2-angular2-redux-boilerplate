@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require("webpack");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -10,6 +11,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: { extensions: ['.webpack.js', '.web.js', '.ts', '.js'] },
+    plugins: [ new CopyWebpackPlugin([{
+        from: 'app/assets',
+        to: 'assets',
+    }])],
     watchOptions: {
         poll: true
     },
