@@ -16,7 +16,6 @@ module.exports = {
             __PRODUCTION__: process.env.NODE_ENV === 'production',
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
         }),
-        new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin({
             mangle: true,
             compress: {
