@@ -5,7 +5,8 @@ import {APP_BASE_HREF,
         PathLocationStrategy}           from '@angular/common';
 import {routing}                        from './routes';
 
-import {CarouselModule}                 from 'ng2-bootstrap';
+import {CarouselModule,
+        DropdownModule}                 from 'ng2-bootstrap';
 
 import {AppComponent}                   from './components/app.component';
 import {DemoCarouseBasicComponent}      from './components/carousel/carousel.component';
@@ -22,7 +23,8 @@ import {HeaderComponent}                from './components/header/header.compone
     imports: [
         BrowserModule,
         routing,
-        CarouselModule.forRoot()
+        CarouselModule.forRoot(),
+        DropdownModule.forRoot()
     ],
     bootstrap:    [ AppComponent ],
     providers:[

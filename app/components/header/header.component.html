@@ -1,10 +1,19 @@
-<div>
-    <nav class='navbar navbar-default'>
-        <div class='container-fluid'>
-            <a class='navbar-brand' [routerLink]="['']">Home</a>
-            <ul class='nav navbar-nav'>
-                <li><a [routerLink]="['/carousel']">Carousel Sample</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
+<nav class='navbar navbar-default'>
+    <div class='container-fluid'>
+        
+        <ul class='nav navbar-nav'>
+            <li><a class="btn-group"  class='navbar-brand' [routerLink]="['']">Home</a></li>
+            <li class="align-middle">
+                <div class="btn-group" dropdown>
+                    <button id="single-button" type="button" class="btn btn-primary" dropdownToggle>
+                        Components <span class="caret"></span>
+                    </button>
+                    <ul dropdownMenu role="menu" aria-labelledby="single-button">
+                        <li role="menuitem"><a class="dropdown-item" [routerLink]="['/carousel']">Carousel Sample</a></li>
+                        
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
