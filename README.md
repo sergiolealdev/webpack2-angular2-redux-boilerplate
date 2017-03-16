@@ -1,5 +1,5 @@
 # webpack2-angular2-redux-boilerplate
 
-Boilerplate for an Angular2 project with Webpack 2 and Redux.
+Abandoned. After what angular-cli rc.2 is capable of doing, boilerplate is not needed anymore.
 
-Work in progress......
+Use https://cli.angular.io/ !!!!
